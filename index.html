@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- Google fonts --> 
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+        <img class="logo" src="./imagenes/Logo.png" alt="Logo de Alura">
+        </header>
+
+        <main>
+            <section class="izquierda">
+                <form action="">
+                    <textarea class="input" id="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí."  required></textarea>
+                    
+                    <div>
+                        <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                    </div>
+
+                    <div class="botones">
+                        <button class="btn-encriptar" type="button" onclick="encriptar()"> Encriptar</button>
+                        <button class="btn-desencriptar" type="button" onclick="Desencriptar()"> Desencriptar</button>
+                    </div>
+                
+                </form>
+            </section>    
+
+            <section class="derecha">
+                <textarea class="output" id="resultado" cols="20" rows="10"  readonly></textarea>
+                </div>
+                <div class="tooltip">
+                    <button class="btn-copiar" id="copy" type="button" onclick="copiar()" onmouseout="texto()"><span class="tooltiptext" id="myTooltip">Copiar al portapapeles</span>Copiar</button>
+                </div>
+            </section>
+
+
+        </main>
+
+       <footer>
+         <p> Jeraldyn Elena Redondo Perez</p>
+         <p> Alura-ONE Oracle Education </p>
+        </footer>
+
+        <script src="script.js"></script>
+        
+
+    </body>
+
+</html>
